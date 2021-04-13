@@ -7,7 +7,7 @@ let imagesLoaded = 0;
 let totalImages = 0;
 
 // Unsplash API
-const countPhotos = 30;
+let countPhotos = 5;
 const apiKey = 'oU0m6w6VS_mGxM_uSkrY6nMV48wKpVaOekvgF-phZvI'; // Deactivated after project completed
 const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${countPhotos}`;
 
@@ -17,9 +17,9 @@ function imageLoaded() {
     if (imagesLoaded === totalImages) {
         ready = true;
         loader.hidden = true;
+        countPhotos = 30;
     }
 }
-
 
 // Helper function to set attributes on DOM elements
 function setAttributes(element, attributes) {
