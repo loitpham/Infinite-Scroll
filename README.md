@@ -1,4 +1,4 @@
-A simple Javascript that demonstrates the infinite scroll feature.
+A simple Javascript project that demonstrates the infinite scroll feature.
 
 <div>
 
